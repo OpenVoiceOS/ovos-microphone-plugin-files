@@ -18,6 +18,7 @@ from os.path import expanduser
 import speech_recognition as sr
 from ovos_plugin_manager.templates.microphone import Microphone
 from ovos_utils.file_utils import FileWatcher
+from ovos_utils.log import LOG
 
 
 @dataclass
@@ -46,15 +47,17 @@ class FilesMicrophone(Microphone):
     def on_new_file(self, path):
         self.current_file = path
 
-        audio = self.read_wave_file(path)
-        full_chunk = audio.frame_data
-        while len(full_chunk) >= self.chunk_size:
-            self._queue.put_nowait(full_chunk[: self.chunk_size])
-            full_chunk = full_chunk[self.chunk_size:]
-
+        try:
+            audio = self.read_wave_file(path)
+            full_chunk = audio.frame_data
+            while len(full_chunk) >= self.chunk_size:
+                self._queue.put_nowait(full_chunk[: self.chunk_size])
+                full_chunk = full_chunk[self.chunk_size:]
+            if self.autodelete:
+                os.remove(path)
+        except:
+            LOG.exception(f"failed to process file: {path}")
         self.current_file = ""
-        if self.autodelete:
-            os.remove(path)
 
     def start(self):
         assert self._watcher is None, "Already started"
