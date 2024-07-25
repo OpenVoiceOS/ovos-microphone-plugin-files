@@ -49,7 +49,7 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-microphone-plugin-files = ovos_microphone_plugin_files:filesMicrophone'
+PLUGIN_ENTRY_POINT = 'ovos-microphone-plugin-files = ovos_microphone_plugin_files:FilesMicrophone'
 
 
 setup(
