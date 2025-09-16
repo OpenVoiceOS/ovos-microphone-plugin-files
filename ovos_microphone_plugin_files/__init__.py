@@ -61,7 +61,7 @@ class FilesMicrophone(Microphone):
 
     def start(self):
         assert self._watcher is None, "Already started"
-        self._watcher = FileWatcher(self.files_folder,
+        self._watcher = FileWatcher([self.files_folder],
                                     callback=self.on_new_file)
         self._is_running = True
 
