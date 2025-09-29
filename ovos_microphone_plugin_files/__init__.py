@@ -48,6 +48,7 @@ class FilesMicrophone(Microphone):
         self.current_file = path
 
         try:
+            LOG.debug(f"processing file: {path}")
             audio = self.read_wave_file(path)
             full_chunk = audio.frame_data
             while len(full_chunk) >= self.chunk_size:
@@ -67,9 +68,11 @@ class FilesMicrophone(Microphone):
 
     def read_chunk(self) -> Optional[bytes]:
         assert self._is_running, "Not running"
-        if self.current_file:
-            return self._queue.get(timeout=self.timeout)
-        return b"0" * self.chunk_size  # silence
+        if not self.current_file and self._queue.empty():
+            return None
+
+        LOG.debug("reading chunk")
+        return self._queue.get(timeout=self.timeout)
 
     def stop(self):
         assert self._watcher is not None, "Not started"
