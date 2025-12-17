@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.1a3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.1a3) (2025-12-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.1a2...0.0.1a3)
+
+**Merged pull requests:**
+
+- Update ovos-plugin-manager requirement from \<2.0.0,\>=0.0.23 to \>=0.0.23,\<3.0.0 in /requirements [\#4](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.0.1a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.1a2) (2025-12-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a3...0.0.1a2)
