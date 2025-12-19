@@ -1,26 +1,20 @@
 # Changelog
 
-## [0.0.1a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.1a2) (2025-12-17)
+## [0.0.2a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a2) (2025-12-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a3...0.0.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a1...0.0.2a2)
 
 **Merged pull requests:**
 
-- fix: automations [\#3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/3) ([JarbasAl](https://github.com/JarbasAl))
-- The Filewatcher expect a list of str [\#2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/2) ([devbar](https://github.com/devbar))
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/1) ([JarbasAl](https://github.com/JarbasAl))
+- chore\(deps\): update actions/checkout action to v6 [\#11](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/11) ([renovate[bot]](https://github.com/apps/renovate))
 
-## [V0.0.0a3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a3) (2024-07-25)
+## [0.0.2a1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a1) (2025-12-18)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a2...V0.0.0a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.1...0.0.2a1)
 
-## [V0.0.0a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a2) (2023-06-09)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a1...V0.0.0a2)
-
-## [V0.0.0a1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a1) (2023-06-09)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/8bb274a87a2eae66d39943309c35e6a5b9496295...V0.0.0a1)
+- chore: Configure Renovate [\#6](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/6) ([renovate[bot]](https://github.com/apps/renovate))
 
 
 
