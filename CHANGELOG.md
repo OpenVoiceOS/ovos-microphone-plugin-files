@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.2a5](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a5) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a4...0.0.2a5)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#8](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.0.2a4](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a4) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a3...0.0.2a4)
