@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.2a3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a2...0.0.2a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/setup-python action to v6 [\#12](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/12) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.0.2a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a2) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a1...0.0.2a2)
