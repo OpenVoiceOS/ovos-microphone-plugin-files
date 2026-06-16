@@ -35,7 +35,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-microphone-plugin-files"
 
-[project.entry-points."ovos.plugin.microphone"]
+[project.entry-points."opm.microphone"]
 ovos-microphone-plugin-files = "ovos_microphone_plugin_files:FilesMicrophone"
 
 [tool.setuptools.dynamic]
