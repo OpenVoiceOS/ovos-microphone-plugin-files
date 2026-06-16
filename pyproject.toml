@@ -30,6 +30,13 @@ classifiers = [
 dynamic = ["version"]
 dependencies = [
     "ovos-plugin-manager>=2.1.0,<3.0.0",
+    "SpeechRecognition",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
 ]
 
 [project.urls]
