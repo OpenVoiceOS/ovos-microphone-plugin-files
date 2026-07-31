@@ -1,26 +1,60 @@
 # Changelog
 
-## [0.0.1a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.1a2) (2025-12-17)
+## [0.0.2a9](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a9) (2026-07-31)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a3...0.0.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a8...0.0.2a9)
 
 **Merged pull requests:**
 
-- fix: automations [\#3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/3) ([JarbasAl](https://github.com/JarbasAl))
-- The Filewatcher expect a list of str [\#2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/2) ([devbar](https://github.com/devbar))
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/1) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#23](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/23) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.0.0a3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a3) (2024-07-25)
+## [0.0.2a8](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a8) (2026-06-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a2...V0.0.0a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a5...0.0.2a8)
 
-## [V0.0.0a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a2) (2023-06-09)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/V0.0.0a1...V0.0.0a2)
+- chore: add missing shared CI workflows [\#21](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/21) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.0.0a1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/V0.0.0a1) (2023-06-09)
+## [0.0.2a5](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a5) (2025-12-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/8bb274a87a2eae66d39943309c35e6a5b9496295...V0.0.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a4...0.0.2a5)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#8](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.2a4](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a3...0.0.2a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update pilosus/action-pip-license-checker action to v3 [\#14](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/14) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.2a3](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a2...0.0.2a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/setup-python action to v6 [\#12](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/12) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.2a2](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a2) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a1...0.0.2a2)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/checkout action to v6 [\#11](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/11) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.2a1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a1) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.1...0.0.2a1)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#6](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/6) ([renovate[bot]](https://github.com/apps/renovate))
 
 
 
