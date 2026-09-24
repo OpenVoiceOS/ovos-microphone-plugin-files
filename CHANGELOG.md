@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3a1](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.3a1) (2026-09-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a9...0.0.3a1)
+
+**Merged pull requests:**
+
+- fix: read the wave through the source the installed OPM provides [\#26](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/pull/26) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.0.2a9](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/tree/0.0.2a9) (2026-07-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-microphone-plugin-files/compare/0.0.2a8...0.0.2a9)
