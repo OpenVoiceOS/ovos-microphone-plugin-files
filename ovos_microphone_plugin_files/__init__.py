@@ -38,11 +38,18 @@ class FilesMicrophone(Microphone):
         reads the wave file at provided path and return the expected
         Audio format
         '''
-        # use the audio file as the audio source
-        r = sr.Recognizer()
+        # ovos-plugin-manager replaces speech_recognition.AudioFile with
+        # its own class (ovos_plugin_manager.utils.audio) from 2.2 on. That
+        # class does not subclass speech_recognition.AudioSource, which is
+        # what Recognizer.record() asserts, so record() refuses the source
+        # it is handed. The replacement reads the stream itself instead.
+        # This plugin declares ovos-plugin-manager>=2.1.0, and 2.1.0 ships
+        # no replacement, so both sources are in range and the test is for
+        # the property record() checks, not for a version.
         with sr.AudioFile(wave_file_path) as source:
-            audio = r.record(source)
-        return audio
+            if isinstance(source, sr.AudioSource):
+                return sr.Recognizer().record(source)
+            return source.read()
 
     def on_new_file(self, path):
         self.current_file = path
