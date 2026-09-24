@@ -64,6 +64,72 @@ class TestFilesMicrophone(unittest.TestCase):
             self.assertEqual(mic.current_file, "")
             self.assertFalse(os.path.exists(path))
 
+    def test_read_wave_file_handles_either_audiofile(self):
+        """The source class is whichever ovos-plugin-manager installed.
+
+        OPM replaces ``speech_recognition.AudioFile`` with its own class,
+        which does not subclass ``speech_recognition.AudioSource``. The
+        upstream class does, and is read through ``Recognizer.record()``;
+        the replacement reads itself through ``read()``. Both are inside
+        the declared ``ovos-plugin-manager>=2.1.0,<3.0.0`` range, so both
+        doors are driven here.
+        """
+        import speech_recognition as sr
+        from ovos_microphone_plugin_files import FilesMicrophone as M
+
+        class _Data:
+            frame_data = b"\x00\x01"
+
+        class _OPMSource:
+            """Not an AudioSource. Reads itself, as OPM's class does."""
+
+            def __init__(self, path):
+                self.path = path
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                return _Data()
+
+        class _UpstreamSource(sr.AudioSource):
+            """An AudioSource with no read(), as the upstream class is."""
+
+            def __init__(self, path):
+                self.path = path
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        recorded = []
+
+        class _Recognizer:
+            def record(self, source):
+                recorded.append(source)
+                return _Data()
+
+        original_file, original_rec = sr.AudioFile, sr.Recognizer
+        try:
+            sr.AudioFile, sr.Recognizer = _OPMSource, _Recognizer
+            audio = M.read_wave_file("ignored.wav")
+            self.assertEqual(audio.frame_data, b"\x00\x01")
+            self.assertEqual(recorded, [], "record() must not be used on a "
+                                           "source it would refuse")
+
+            sr.AudioFile = _UpstreamSource
+            audio = M.read_wave_file("ignored.wav")
+            self.assertEqual(audio.frame_data, b"\x00\x01")
+            self.assertEqual(len(recorded), 1,
+                             "an AudioSource is read through record()")
+        finally:
+            sr.AudioFile, sr.Recognizer = original_file, original_rec
+
     def test_read_chunk_requires_running(self):
         mic = FilesMicrophone()
         with self.assertRaises(AssertionError):
